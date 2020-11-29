@@ -1,5 +1,8 @@
+var Car = function(loc) {
+  return { loc: loc };
+};
 var Van = function(loc) {
-  var obj = { loc: loc };
+  var obj = Car(loc);
   obj.move = function() {
     obj.loc++;
   };
@@ -9,7 +12,7 @@ var Van = function(loc) {
   return obj;
 };
 var Cop = function(loc) {
-  var obj = { loc: loc };
+  var obj = Car(loc);
   obj.move = function() {
     obj.loc++;
   };
